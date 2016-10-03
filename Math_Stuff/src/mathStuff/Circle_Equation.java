@@ -8,6 +8,6 @@ public class Circle_Equation extends Math_Ops {
 	
 	/*protected void main()
 	{
-		test
+		
 	}*/
 }

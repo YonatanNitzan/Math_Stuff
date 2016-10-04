@@ -5,10 +5,9 @@ import java.io.IOException;
 
 public class Average extends Math_Ops{
 
-	static LinkedList<Double> inputs = new LinkedList<Double>();
-	private double input = 0;
-	private double sum = 0;
-	private double avr = 0;
+	static LinkedList<Float> inputs = new LinkedList<Float>();
+	private float input, sum;
+	private double avr;
 	
 	public Average()
 	{
@@ -21,7 +20,7 @@ public class Average extends Math_Ops{
         	try
         	{
 	        	System.out.print("Enter a number: ");
-				input = Main_Activity.scanner.nextDouble();
+				input = Main_Activity.scanner.nextFloat();
 		        inputs.add(input);
         	}
         	catch(Exception e)
@@ -37,8 +36,9 @@ public class Average extends Math_Ops{
         
         avr = sum / inputs.size();
         
-        System.out.println("The average is: " + avr);
-		System.out.print("Press \"ENTER\" to continue...");
+        System.out.println("\nThe average is: " + avr);
+        
+		System.out.print("\nPress \"ENTER\" to return to the main menu...");
 		try
 		{
 			System.in.read(new byte[2]);

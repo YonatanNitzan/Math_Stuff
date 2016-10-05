@@ -6,7 +6,7 @@ public class Distance_Between_Dots extends Math_Ops {
 	
 	private float x1, y1, x2, y2;
 	private double distance;
-	private Boolean execute = true;
+	private boolean execute = true;
 	
 	public Distance_Between_Dots()
 	{

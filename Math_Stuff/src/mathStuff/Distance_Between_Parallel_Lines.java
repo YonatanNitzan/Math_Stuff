@@ -6,7 +6,7 @@ public class Distance_Between_Parallel_Lines extends Math_Ops {
 	
 	private float a, b, c1, c2;
 	private double distance;
-	private Boolean execute = true;
+	private boolean execute = true;
 	
 	public Distance_Between_Parallel_Lines()
 	{

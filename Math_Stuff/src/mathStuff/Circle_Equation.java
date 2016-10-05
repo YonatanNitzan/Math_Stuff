@@ -6,7 +6,7 @@ public class Circle_Equation extends Math_Ops {
 	
 	private float midX, midY, radius;
 	private String xSection, ySection, radiusSection;
-	private Boolean execute = true;
+	private boolean execute = true;
 	
 	public Circle_Equation()
 	{
@@ -70,7 +70,7 @@ public class Circle_Equation extends Math_Ops {
 			radiusSection = String.format(" = %.2f", radius * 2);
 		
 		if(execute)
-			{
+		{
 			System.out.println("\nThe circle's equation is: " + xSection + ySection + radiusSection);
 			
 			System.out.print("Press \"ENTER\" to return to the main menu...");

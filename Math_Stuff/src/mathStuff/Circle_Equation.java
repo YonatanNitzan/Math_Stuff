@@ -33,39 +33,6 @@ public class Circle_Equation extends Math_Ops {
 				ySection = String.format("(Y + %.2f)", -midY);
 			else
 				ySection = String.format("(Y - %.2f)", midY);
-			
-			if(radius <= 0)
-			{
-				System.out.println("\nThat is not a posible radius");
-				System.out.println("Press \"ENTER\" to try again...");
-				try
-				{
-					System.in.read(new byte[2]);
-				}
-				catch (IOException e1)
-				{
-					e1.printStackTrace();
-				}
-				main();
-				execute = false;
-			}
-			else
-				radiusSection = String.format(" = %.2f", radius * 2);
-			
-			if(execute)
-				{
-				System.out.println("\nThe circle's equation is: " + xSection + ySection + radiusSection);
-				
-				System.out.print("Press \"ENTER\" to return to the main menu...");
-				try
-				{
-					System.in.read(new byte[2]);
-				}
-				catch (IOException e1)
-				{
-					e1.printStackTrace();
-				}
-			}
 		}
 		catch(Exception e)
 		{
@@ -81,8 +48,40 @@ public class Circle_Equation extends Math_Ops {
 				e1.printStackTrace();
 			}
 			main();
+			execute = false;
 		}
 		
+		if(radius <= 0)
+		{
+			System.out.println("\nThat is not a posible radius");
+			System.out.println("Press \"ENTER\" to try again...");
+			try
+			{
+				System.in.read(new byte[2]);
+			}
+			catch (IOException e1)
+			{
+				e1.printStackTrace();
+			}
+			main();
+			execute = false;
+		}
+		else
+			radiusSection = String.format(" = %.2f", radius * 2);
 		
+		if(execute)
+			{
+			System.out.println("\nThe circle's equation is: " + xSection + ySection + radiusSection);
+			
+			System.out.print("Press \"ENTER\" to return to the main menu...");
+			try
+			{
+				System.in.read(new byte[2]);
+			}
+			catch (IOException e1)
+			{
+				e1.printStackTrace();
+			}
+		}	
 	}
 }

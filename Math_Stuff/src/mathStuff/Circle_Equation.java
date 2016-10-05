@@ -6,6 +6,7 @@ public class Circle_Equation extends Math_Ops {
 	
 	private float midX, midY, radius;
 	private String xSection, ySection, radiusSection;
+	private Boolean execute = true;
 	
 	public Circle_Equation()
 	{
@@ -46,20 +47,24 @@ public class Circle_Equation extends Math_Ops {
 					e1.printStackTrace();
 				}
 				main();
+				execute = false;
 			}
 			else
 				radiusSection = String.format(" = %.2f", radius * 2);
 			
-			System.out.println("\nThe circle's equation is: " + xSection + ySection + radiusSection);
-			
-			System.out.print("Press \"ENTER\" to return to the main menu...");
-			try
-			{
-				System.in.read(new byte[2]);
-			}
-			catch (IOException e1)
-			{
-				e1.printStackTrace();
+			if(execute)
+				{
+				System.out.println("\nThe circle's equation is: " + xSection + ySection + radiusSection);
+				
+				System.out.print("Press \"ENTER\" to return to the main menu...");
+				try
+				{
+					System.in.read(new byte[2]);
+				}
+				catch (IOException e1)
+				{
+					e1.printStackTrace();
+				}
 			}
 		}
 		catch(Exception e)

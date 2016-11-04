@@ -42,8 +42,8 @@ public class Formulas_Roots extends Math_Ops {
 			execute = false;
 		}		
 			
-		x1 = (-b + Math.sqrt(Math.pow(b, 2) - 4*a*c)) / 2*a;
-		x2 = (-b - Math.sqrt(Math.pow(b, 2) - 4*a*c)) / 2*a;
+		x1 = (-b + Math.sqrt(Math.pow(b, 2) - 4*a*c)) / (2*a);
+		x2 = (-b - Math.sqrt(Math.pow(b, 2) - 4*a*c)) / (2*a);
 		
 		if(x1 == x2)
 		{

@@ -80,9 +80,9 @@ public class Distance_From_Line extends Math_Ops {
 			{
 				System.in.read(new byte[2]);
 			}
-			catch (IOException e2)
+			catch (IOException e1)
 			{
-				e2.printStackTrace();
+				e1.printStackTrace();
 			}
 		}
 	}

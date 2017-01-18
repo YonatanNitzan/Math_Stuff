@@ -24,6 +24,7 @@ public class Main_Activity {
 			operations.add("Distance from line");
 			operations.add("Formulas roots");
 			operations.add("Fraction to decimal");
+			operations.add("Grade calculator");
 			operations.add("Middle point");
 			operations.add("Parabola");
 			operations.add("Relative distribution");

@@ -68,20 +68,25 @@ public class Math_Ops {
 			
 		case 8:
 			@SuppressWarnings("unused")
-			Middle_Point midPoint = new Middle_Point();
+			Grade_Calculator gradCal = new Grade_Calculator();
 			break;
 			
 		case 9:
 			@SuppressWarnings("unused")
-			Parabola parabola = new Parabola();
+			Middle_Point midPoint = new Middle_Point();
 			break;
 			
 		case 10:
 			@SuppressWarnings("unused")
-			Relative_Distribution relativeDis = new Relative_Distribution();
+			Parabola parabola = new Parabola();
 			break;
 			
 		case 11:
+			@SuppressWarnings("unused")
+			Relative_Distribution relativeDis = new Relative_Distribution();
+			break;
+			
+		case 12:
 			@SuppressWarnings("unused")
 			Root_To_Decimal rootToDec = new Root_To_Decimal();
 			break;

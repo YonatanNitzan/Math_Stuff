@@ -6,8 +6,8 @@ public class Relative_Distribution extends Math_Ops {
 		main();
 	}
 	
-	/*protected void main()
+	protected void main()
 	{
 		
-	}*/
+	}
 }
